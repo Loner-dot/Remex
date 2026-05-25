@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #888888;
+  font-family: 'JetBrains Mono', monospace;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(5, 5, 5, 0.92);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(50, 50, 50, 0.15);
+  border-radius: 2px;
+  padding: 28px;
+}
+
+.btn-zen {
+  background: #080808;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  padding: 16px 28px;
+  color: #aaaaaa;
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.btn-zen:active {
+  background: #111111;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+input, select, textarea {
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 2px;
+  padding: 16px 18px;
+  color: #aaaaaa;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 18px;
+  outline: none;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #444444;
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #333333;
+  letter-spacing: 3px;
+}
+
+select {
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='%23555555' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding-right: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+}
+
+.zen-title {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 300;
+}
+
+.zen-divider {
+  height: 1px;
+  background: #1a1a1a;
+  margin: 25px 0;
+}
+
+.zen-tag {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 9px;
+  color: #555555;
+}
